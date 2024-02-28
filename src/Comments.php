@@ -52,5 +52,4 @@ class Comments{
         return $this->postId;
     }
 
-
 }

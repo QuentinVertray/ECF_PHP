@@ -1,5 +1,4 @@
 <?php
-use ECF\Posts;
 use ECF\Comments;
 use ECF\Database;
 include_once __DIR__ . DIRECTORY_SEPARATOR . "template" . DIRECTORY_SEPARATOR . "header.php";
@@ -32,6 +31,8 @@ $comments = $stmt->fetchAll();
     <p>Article non trouvé.</p>
 <?php endif ?>
 
+<hr class="my-4">
+
 <h3>Les commentaires</h3>
 <?php foreach ($comments as $comment) : ?>
     <div class="card mb-4">
@@ -42,3 +43,5 @@ $comments = $stmt->fetchAll();
         </div>
     </div>
 <?php endforeach ?>
+
+<button type="button" class="btn btn-success">Afficher plus</button>

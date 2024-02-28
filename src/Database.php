@@ -12,6 +12,7 @@ class Database extends \PDO{
     private array $options= [\PDO::ATTR_DEFAULT_FETCH_MODE =>
         \PDO::FETCH_OBJ];
 
+
     public function __construct(){
         $dsn = "{$this->bdd}:host={$this->host};dbname={$this->dbname};
             port={$this->port}";
