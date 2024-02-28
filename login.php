@@ -7,7 +7,6 @@ use ECF\Database;
 $error = null;
 $success = null;
 
-dump($_POST);
 if(!empty($_POST)){
     try {
         $pdo = new Database();
@@ -25,6 +24,7 @@ if(!empty($_POST)){
                 $success = "Vous êtes connectés";
                 $_SESSION['user'] = true;
                 $_SESSION['role'] = $user->getRole();
+                header('Location: index.php');
             }else{
                 $error = "Le mot de passe est incorrect";
             }
