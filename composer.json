@@ -1,0 +1,19 @@
+{
+    "name": "quent/ecf",
+    "autoload": {
+        "psr-4": {
+            "ECF\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Quentin"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^7.0"
+    },
+    "require": {
+        "ext-pdo": "*"
+    }
+}
