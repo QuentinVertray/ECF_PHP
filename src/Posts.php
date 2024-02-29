@@ -2,9 +2,6 @@
 
 namespace ECF;
 
-use DateTime;
-use Exception;
-
 class Posts{
     private int $id;
     private string $title;
@@ -12,18 +9,6 @@ class Posts{
     private string $createdAt;
     private string $author;
 
-
-    /**
-     * @throws Exception
-     */
-    public function loadFromDb(array $data): void
-    {
-        $this->id = $data['id'];
-        $this->title = $data['title'];
-        $this->body = $data['body'];
-        $this->author = $data['author'];
-        $this->createdAt = $data['createdAt'];
-    }
 
     /**
      * @return int
